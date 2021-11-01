@@ -1,15 +1,14 @@
-@extends('layouts.admin.master')
+<?php $__env->startSection('title'); ?>General <?php echo e($title); ?>
 
-@section('title')General {{ $title }}
-@endsection
+<?php $__env->stopSection(); ?>
 
-@push('css')
-<link rel="stylesheet" type="text/css" href="{{asset('assets/css/date-picker.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('assets/css/owlcarousel.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('assets/css/prism.css')}}">
-<link rel="stylesheet" type="text/css" href="{{asset('assets/css/whether-icon.css')}}">
-@endpush
-    @section('content')        
+<?php $__env->startPush('css'); ?>
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/date-picker.css')); ?>">
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/owlcarousel.css')); ?>">
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/prism.css')); ?>">
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/whether-icon.css')); ?>">
+<?php $__env->stopPush(); ?>
+    <?php $__env->startSection('content'); ?>        
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-6 col-xl-3 col-lg-6">
@@ -264,19 +263,20 @@
             </div>
         </div>
 
-    @push('scripts')    
-        <script src="{{asset('assets/js/prism/prism.min.js')}}"></script>
-        <script src="{{asset('assets/js/clipboard/clipboard.min.js')}}"></script>
-        <script src="{{asset('assets/js/counter/jquery.waypoints.min.js')}}"></script>
-        <script src="{{asset('assets/js/counter/jquery.counterup.min.js')}}"></script>
-        <script src="{{asset('assets/js/counter/counter-custom.js')}}"></script>
-        <script src="{{asset('assets/js/custom-card/custom-card.js')}}"></script>
-        <script src="{{asset('assets/js/datepicker/date-picker/datepicker.js')}}"></script>
-        <script src="{{asset('assets/js/datepicker/date-picker/datepicker.en.js')}}"></script>
-        <script src="{{asset('assets/js/datepicker/date-picker/datepicker.custom.js')}}"></script>
-        <script src="{{asset('assets/js/owlcarousel/owl.carousel.js')}}"></script>
-        <script src="{{asset('assets/js/general-widget.js')}}"></script>
-        <script src="{{asset('assets/js/height-equal.js')}}"></script>
-        <script src="{{asset('assets/js/tooltip-init.js')}}"></script>
-    @endpush
-@endsection
+    <?php $__env->startPush('scripts'); ?>    
+        <script src="<?php echo e(asset('assets/js/prism/prism.min.js')); ?>"></script>
+        <script src="<?php echo e(asset('assets/js/clipboard/clipboard.min.js')); ?>"></script>
+        <script src="<?php echo e(asset('assets/js/counter/jquery.waypoints.min.js')); ?>"></script>
+        <script src="<?php echo e(asset('assets/js/counter/jquery.counterup.min.js')); ?>"></script>
+        <script src="<?php echo e(asset('assets/js/counter/counter-custom.js')); ?>"></script>
+        <script src="<?php echo e(asset('assets/js/custom-card/custom-card.js')); ?>"></script>
+        <script src="<?php echo e(asset('assets/js/datepicker/date-picker/datepicker.js')); ?>"></script>
+        <script src="<?php echo e(asset('assets/js/datepicker/date-picker/datepicker.en.js')); ?>"></script>
+        <script src="<?php echo e(asset('assets/js/datepicker/date-picker/datepicker.custom.js')); ?>"></script>
+        <script src="<?php echo e(asset('assets/js/owlcarousel/owl.carousel.js')); ?>"></script>
+        <script src="<?php echo e(asset('assets/js/general-widget.js')); ?>"></script>
+        <script src="<?php echo e(asset('assets/js/height-equal.js')); ?>"></script>
+        <script src="<?php echo e(asset('assets/js/tooltip-init.js')); ?>"></script>
+    <?php $__env->stopPush(); ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.admin.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH F:\Clients\2021-10\Richard\runcapitalgroup\resources\views/admin/widgets/general-widget.blade.php ENDPATH**/ ?>

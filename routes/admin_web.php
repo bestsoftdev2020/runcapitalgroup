@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CustomAuthController;
 
 Route::prefix('admin')->group(function () {
 });
@@ -218,13 +219,16 @@ Route::view('error-page2', 'admin.errors.error-page2')->name('error-page2');
 Route::view('error-page3', 'admin.errors.error-page3')->name('error-page3');
 Route::view('error-page4', 'admin.errors.error-page4')->name('error-page4');
 
-Route::view('login', 'admin.authentication.login')->name('login');
+Route::get('logout', [CustomAuthController::class, 'signOut'])->name('logout');
+Route::get('login', [CustomAuthController::class, 'index'])->name('login');
+Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom'); 
 Route::view('login_one', 'admin.authentication.login_one')->name('login_one');
 Route::view('login_two', 'admin.authentication.login_two')->name('login_two');
 Route::view('login-bs-validation', 'admin.authentication.login-bs-validation')->name('login-bs-validation');
 Route::view('login-bs-tt-validation', 'admin.authentication.login-bs-tt-validation')->name('login-bs-tt-validation');
 Route::view('login-sa-validation', 'admin.authentication.login-sa-validation')->name('login-sa-validation');
-Route::view('sign-up', 'admin.authentication.sign-up')->name('sign-up');
+Route::get('sign-up', [CustomAuthController::class, 'registration'])->name('sign-up');
+Route::post('custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom'); 
 Route::view('sign-up-one', 'admin.authentication.sign-up-one')->name('sign-up-one');
 Route::view('sign-up-two', 'admin.authentication.sign-up-two')->name('sign-up-two');
 Route::view('unlock', 'admin.authentication.unlock')->name('unlock');

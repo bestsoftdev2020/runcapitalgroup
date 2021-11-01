@@ -1,22 +1,21 @@
-@extends('admin.authentication.master')
+<?php $__env->startSection('title'); ?>Sign Up
+ <?php echo e($title); ?>
 
-@section('title')Sign Up
- {{ $title }}
-@endsection
+<?php $__env->stopSection(); ?>
 
-@push('css')
-<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/sweetalert2.css') }}">
-@endpush
+<?php $__env->startPush('css'); ?>
+<link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/sweetalert2.css')); ?>">
+<?php $__env->stopPush(); ?>
 
-@section('content')
+<?php $__env->startSection('content'); ?>
     <section>
 	    <div class="container-fluid p-0">
 	        <div class="row m-0">
-	            <div class="col-xl-5"><img class="bg-img-cover bg-center" src="{{ asset('assets/images/login/3.jpg') }}" alt="looginpage" /></div>
+	            <div class="col-xl-5"><img class="bg-img-cover bg-center" src="<?php echo e(asset('assets/images/login/3.jpg')); ?>" alt="looginpage" /></div>
 	            <div class="col-xl-7 p-0">
 	                <div class="login-card">
-	                    <form class="theme-form login-form" method="POST" action="{{ route('register.custom') }}">
-							@csrf
+	                    <form class="theme-form login-form" method="POST" action="<?php echo e(route('register.custom')); ?>">
+							<?php echo csrf_field(); ?>
 	                        <h4>Create your account</h4>
 	                        <h6>Enter your personal details to create account</h6>
 	                        <div class="form-group">
@@ -69,7 +68,7 @@
 	                                </li>
 	                            </ul>
 	                        </div>
-	                        <p>Already have an account?<a class="ms-2" href="{{ route('login') }}">Sign in</a></p>
+	                        <p>Already have an account?<a class="ms-2" href="<?php echo e(route('login')); ?>">Sign in</a></p>
 	                    </form>
 	                </div>
 	            </div>
@@ -78,8 +77,9 @@
 	</section>
 
 
-    @push('scripts')
-    <script src="{{ asset('assets/js/sweet-alert/sweetalert.min.js') }}"></script>
-    @endpush
+    <?php $__env->startPush('scripts'); ?>
+    <script src="<?php echo e(asset('assets/js/sweet-alert/sweetalert.min.js')); ?>"></script>
+    <?php $__env->stopPush(); ?>
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('admin.authentication.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH F:\Clients\2021-10\Richard\runcapitalgroup\resources\views/admin/authentication/sign-up.blade.php ENDPATH**/ ?>

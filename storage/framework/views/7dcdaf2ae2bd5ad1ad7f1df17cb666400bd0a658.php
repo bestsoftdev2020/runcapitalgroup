@@ -1,36 +1,27 @@
-@extends('admin.authentication.master')
+<?php $__env->startSection('title'); ?>login
+ <?php echo e($title); ?>
 
-@section('title')Sign Up
- {{ $title }}
-@endsection
+<?php $__env->stopSection(); ?>
 
-@push('css')
-<link rel="stylesheet" type="text/css" href="{{ asset('assets/css/sweetalert2.css') }}">
-@endpush
+<?php $__env->startPush('css'); ?>
+<?php $__env->stopPush(); ?>
 
-@section('content')
+<?php $__env->startSection('content'); ?>
     <section>
-	    <div class="container-fluid p-0">
-	        <div class="row m-0">
-	            <div class="col-xl-5"><img class="bg-img-cover bg-center" src="{{ asset('assets/images/login/3.jpg') }}" alt="looginpage" /></div>
-	            <div class="col-xl-7 p-0">
+	    <div class="container-fluid">
+	        <div class="row">
+	            <div class="col-xl-7"><img class="bg-img-cover bg-center" src="<?php echo e(asset('assets/images/login/2.jpg')); ?>" alt="looginpage" /></div>
+	            <div class="col-xl-5 p-0">
 	                <div class="login-card">
-	                    <form class="theme-form login-form" method="POST" action="{{ route('register.custom') }}">
-							@csrf
-	                        <h4>Create your account</h4>
-	                        <h6>Enter your personal details to create account</h6>
-	                        <div class="form-group">
-	                            <label>Your Name</label>
-								<div class="input-group">
-									<span class="input-group-text"><i class="icon-user"></i></span>
-									<input class="form-control" required="" id="name" name="name"/>
-								</div>
-	                        </div>
+	                    <form class="theme-form login-form" method="POST" action="<?php echo e(route('login.custom')); ?>">
+                            <?php echo csrf_field(); ?>
+	                        <h4>Login</h4>
+	                        <h6>Welcome back! Log in to your account.</h6>
 	                        <div class="form-group">
 	                            <label>Email Address</label>
 	                            <div class="input-group">
 	                                <span class="input-group-text"><i class="icon-email"></i></span>
-	                                <input class="form-control" type="email" id="email_address" name="email" required="" placeholder="Test@gmail.com" />
+	                                <input class="form-control" id="email" name="email" type="email" required="" placeholder="Test@gmail.com" />
 	                            </div>
 	                        </div>
 	                        <div class="form-group">
@@ -44,11 +35,12 @@
 	                        <div class="form-group">
 	                            <div class="checkbox">
 	                                <input id="checkbox1" type="checkbox" />
-	                                <label class="text-muted" for="checkbox1">Agree with <span>Privacy Policy </span></label>
+	                                <label class="text-muted" for="checkbox1">Remember password</label>
 	                            </div>
+	                            <a class="link" href="<?php echo e(route('forget-password')); ?>">Forgot password?</a>
 	                        </div>
 	                        <div class="form-group">
-	                            <button class="btn btn-primary btn-block" type="submit">Create Account</button>
+	                            <button class="btn btn-primary btn-block" type="submit">Sign in</button>
 	                        </div>
 	                        <div class="login-social-title">
 	                            <h5>Sign in with</h5>
@@ -69,7 +61,7 @@
 	                                </li>
 	                            </ul>
 	                        </div>
-	                        <p>Already have an account?<a class="ms-2" href="{{ route('login') }}">Sign in</a></p>
+	                        <p>Don't have account?<a class="ms-2" href="<?php echo e(route('sign-up')); ?>">Create Account</a></p>
 	                    </form>
 	                </div>
 	            </div>
@@ -77,9 +69,9 @@
 	    </div>
 	</section>
 
+	
+    <?php $__env->startPush('scripts'); ?>
+    <?php $__env->stopPush(); ?>
 
-    @push('scripts')
-    <script src="{{ asset('assets/js/sweet-alert/sweetalert.min.js') }}"></script>
-    @endpush
-
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('admin.authentication.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH F:\Clients\2021-10\Richard\runcapitalgroup\resources\views/admin/authentication/login.blade.php ENDPATH**/ ?>

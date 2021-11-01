@@ -1,6 +1,6 @@
 <header class="main-nav">
     <div class="sidebar-user text-center">
-        <a class="setting-primary" href="javascript:void(0)"><i data-feather="settings"></i></a><img class="img-90 rounded-circle" src="{{asset('assets/images/dashboard/1.png')}}" alt="" />
+        <a class="setting-primary" href="javascript:void(0)"><i data-feather="settings"></i></a><img class="img-90 rounded-circle" src="<?php echo e(asset('assets/images/dashboard/1.png')); ?>" alt="" />
         <div class="badge-bottom"><span class="badge badge-primary">New</span></div>
         <a href="user-profile"> <h6 class="mt-3 f-14 f-w-600">Emay Walter</h6></a>
         <p class="mb-0 font-roboto">Human Resources Department</p>
@@ -33,13 +33,13 @@
                         </div>
                     </li>
                     <li>
-                        <a class="nav-link menu-title link-nav {{ routeActive('/widgets') }}" href="{{ route('index') }}"><i data-feather="home"></i><span>Dashboard</span></a>                  
+                        <a class="nav-link menu-title link-nav <?php echo e(routeActive('/widgets')); ?>" href="<?php echo e(route('index')); ?>"><i data-feather="home"></i><span>Dashboard</span></a>                  
                     </li>
                     <li>
-                        <a class="nav-link menu-title link-nav {{ routeActive('/dashboard') }}" href="{{ route('general-widget') }}"><i data-feather="airplay"></i><span>Widgets</span></a>
+                        <a class="nav-link menu-title link-nav <?php echo e(routeActive('/dashboard')); ?>" href="<?php echo e(route('general-widget')); ?>"><i data-feather="airplay"></i><span>Widgets</span></a>
                     </li>
                     <li>
-                        <a class="nav-link menu-title link-nav {{ routeActive('/form-layout') }}" href="{{ route('default-form') }}"><i data-feather="layout"></i><span>Page layout</span></a>
+                        <a class="nav-link menu-title link-nav <?php echo e(routeActive('/form-layout')); ?>" href="<?php echo e(route('default-form')); ?>"><i data-feather="layout"></i><span>Page layout</span></a>
                     </li>
                 </ul>
             </div>
@@ -47,3 +47,4 @@
         </div>
     </nav>
 </header>
+<?php /**PATH F:\Clients\2021-10\Richard\runcapitalgroup\resources\views/layouts/admin/partials/sidebar.blade.php ENDPATH**/ ?>
