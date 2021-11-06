@@ -32,11 +32,19 @@
                             <h6>General</h6>
                         </div>
                     </li>
-                    <li>
-                        <a class="nav-link menu-title link-nav {{ routeActive('/widgets') }}" href="{{ route('index') }}"><i data-feather="home"></i><span>Dashboard</span></a>                  
+                    <li class="dropdown">
+                        <a class="nav-link menu-title {{ prefixActive('/widgets') }}" href="javascript:void(0)"><i data-feather="home"></i><span>Dashboard</span></a>                  
+                        <ul class="nav-submenu menu-content" style="display: {{ prefixBlock('/dashboard') }};">
+                            <li><a href="{{route('index')}}" class="{{routeActive('index')}}">Default</a></li>
+                            <li><a href="{{route('dashboard-02')}}" class="{{routeActive('dashboard-02')}}">Ecommerce</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a class="nav-link menu-title link-nav {{ routeActive('/dashboard') }}" href="{{ route('general-widget') }}"><i data-feather="airplay"></i><span>Widgets</span></a>
+                    <li class="dropdown">
+                        <a class="nav-link menu-title {{ prefixActive('/widgets') }}" href="javascript:void(0)"><i data-feather="airplay"></i><span>Widgets</span></a>
+                        <ul class="nav-submenu menu-content"  style="display: {{ prefixBlock('/widgets') }};">
+                            <li><a href="{{ route('general-widget') }}" class="{{routeActive('general-widget')}}">General</a></li>
+                            <li><a href="{{ route('chart-widget') }}" class="{{routeActive('chart-widget')}}">Chart</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a class="nav-link menu-title link-nav {{ routeActive('/form-layout') }}" href="{{ route('default-form') }}"><i data-feather="layout"></i><span>Page layout</span></a>

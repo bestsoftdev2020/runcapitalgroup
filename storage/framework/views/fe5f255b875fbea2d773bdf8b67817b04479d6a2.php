@@ -72,11 +72,42 @@
                         <div class="cal-date-widget card-body">
                             <div class="row">
                                 <div class="col-xl-6 col-xs-12 col-md-6 col-sm-6">
-                                    <div class="cal-info text-center">
-                                        <div>
-                                            <h2>24</h2>
-                                            <div class="d-inline-block"><span class="b-r-dark pe-3">March</span><span class="ps-3">2018</span></div>
-                                            <p class="f-16">There is no minimum donation, any sum is appreciated</p>
+                                    <div class="card profile-greeting">
+                                        <div class="card-header">
+                                            <div class="header-top">
+                                                <div class="setting-list bg-primary position-unset">
+                                                    <ul class="list-unstyled setting-option">
+                                                        <li>
+                                                            <div class="setting-white"><i class="icon-settings"></i></div>
+                                                        </li>
+                                                        <li><i class="view-html fa fa-code font-white"></i></li>
+                                                        <li><i class="icofont icofont-maximize full-card font-white"></i></li>
+                                                        <li><i class="icofont icofont-minus minimize-card font-white"></i></li>
+                                                        <li><i class="icofont icofont-refresh reload-card font-white"></i></li>
+                                                        <li><i class="icofont icofont-error close-card font-white"></i></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body text-center p-t-0">
+                                            <h3 class="font-light">Wellcome Back, John!!</h3>
+                                            <p>Welcome to the viho Family! we are glad that you are visite this dashboard. we will be happy to help you grow your business.</p>
+                                            <button class="btn btn-light">Update</button>
+                                        </div>
+                                        <div class="confetti">
+                                            <div class="confetti-piece"></div>
+                                            <div class="confetti-piece"></div>
+                                            <div class="confetti-piece"></div>
+                                            <div class="confetti-piece"></div>
+                                            <div class="confetti-piece"></div>
+                                            <div class="confetti-piece"></div>
+                                            <div class="confetti-piece"></div>
+                                            <div class="confetti-piece"></div>
+                                            <div class="confetti-piece"></div>
+                                            <div class="confetti-piece"></div>
+                                            <div class="confetti-piece"></div>
+                                            <div class="confetti-piece"></div>
+                                            <div class="confetti-piece"></div>
                                         </div>
                                     </div>
                                 </div>

@@ -32,11 +32,19 @@
                             <h6>General</h6>
                         </div>
                     </li>
-                    <li>
-                        <a class="nav-link menu-title link-nav <?php echo e(routeActive('/widgets')); ?>" href="<?php echo e(route('index')); ?>"><i data-feather="home"></i><span>Dashboard</span></a>                  
+                    <li class="dropdown">
+                        <a class="nav-link menu-title <?php echo e(prefixActive('/widgets')); ?>" href="javascript:void(0)"><i data-feather="home"></i><span>Dashboard</span></a>                  
+                        <ul class="nav-submenu menu-content" style="display: <?php echo e(prefixBlock('/dashboard')); ?>;">
+                            <li><a href="<?php echo e(route('index')); ?>" class="<?php echo e(routeActive('index')); ?>">Default</a></li>
+                            <li><a href="<?php echo e(route('dashboard-02')); ?>" class="<?php echo e(routeActive('dashboard-02')); ?>">Ecommerce</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a class="nav-link menu-title link-nav <?php echo e(routeActive('/dashboard')); ?>" href="<?php echo e(route('general-widget')); ?>"><i data-feather="airplay"></i><span>Widgets</span></a>
+                    <li class="dropdown">
+                        <a class="nav-link menu-title <?php echo e(prefixActive('/widgets')); ?>" href="javascript:void(0)"><i data-feather="airplay"></i><span>Widgets</span></a>
+                        <ul class="nav-submenu menu-content"  style="display: <?php echo e(prefixBlock('/widgets')); ?>;">
+                            <li><a href="<?php echo e(route('general-widget')); ?>" class="<?php echo e(routeActive('general-widget')); ?>">General</a></li>
+                            <li><a href="<?php echo e(route('chart-widget')); ?>" class="<?php echo e(routeActive('chart-widget')); ?>">Chart</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a class="nav-link menu-title link-nav <?php echo e(routeActive('/form-layout')); ?>" href="<?php echo e(route('default-form')); ?>"><i data-feather="layout"></i><span>Page layout</span></a>
