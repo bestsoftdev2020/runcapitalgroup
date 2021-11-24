@@ -68,11 +68,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 xl-100 box-col-12">
+                <div class="col-xl-12 xl-100 box-col-12">
                     <div class="card">
                         <div class="cal-date-widget card-body">
                             <div class="row">
-                                <div class="col-xl-6 col-xs-12 col-md-6 col-sm-6">
+                                <div class="col-xl-3 col-xs-6 col-md-3 col-sm-3">
                                     <div class="card profile-greeting">
                                         <div class="card-header">
                                             <div class="header-top">
@@ -112,16 +112,58 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-6 col-xs-12 col-md-6 col-sm-6">
-                                    <div class="cal-datepicker">
-                                        <div class="datepicker-here float-sm-end" data-language="en">           </div>
+                                <div class="col-xl-9 col-xs-12 col-md-9 col-sm-9">
+                                    <div class="card mb-30">
+                                        <div class="card-body pb-0">
+                                            <h4 class="card-title">Last Month Summary</h4>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Item</th>
+                                                                <th scope="col">Status</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Portable Speaker</td>
+                                                                <td class="font-weight-bold text-success">+ $1200</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Portable Headphone</td>
+                                                                <td class="text-success">In Stock</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Speaker</td>
+                                                                <td class="text-danger">Out of stock</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Watch</td>
+                                                                <td class="text-warning">Low stock</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Portable Headphone</td>
+                                                                <td class="font-weight-bold">In Stock</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="chart-wrapper">
+                                                        <div id="echart_dashboard" style="height: 300px; width: 100%;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 xl-50 col-sm-6 box-col-6">
+                <div class="row">
+                <div class="col-xl-6 xl-50 col-sm-6 box-col-6">
                     <div class="card">
                         <div class="mobile-clock-widget">
                             <div class="bg-svg">
@@ -161,7 +203,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 xl-50 col-sm-6 box-col-6">
+                <div class="col-xl-6 xl-50 col-sm-6 box-col-6">
                     <div class="card">
                         <div class="weather-widget-two">
                             <div class="card-body">
@@ -292,10 +334,12 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
         </div>
 
     @push('scripts')    
+        <script src="{{asset('assets/js/echart.js')}}"></script>
         <script src="{{asset('assets/js/prism/prism.min.js')}}"></script>
         <script src="{{asset('assets/js/clipboard/clipboard.min.js')}}"></script>
         <script src="{{asset('assets/js/counter/jquery.waypoints.min.js')}}"></script>
