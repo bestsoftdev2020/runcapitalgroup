@@ -162,8 +162,11 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-xl-12 xl-100 box-col-12">
+                <div class="card">
+                <div class="cal-date-widget card-body">
                 <div class="row">
-                <div class="col-xl-6 xl-50 col-sm-6 box-col-6">
+                <div class="col-xl-3 col-xs-6 col-md-3 col-sm-3">
                     <div class="card">
                         <div class="mobile-clock-widget">
                             <div class="bg-svg">
@@ -203,7 +206,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 xl-50 col-sm-6 box-col-6">
+                <div class="col-xl-3 col-xs-6 col-md-3 col-sm-3">
                     <div class="card">
                         <div class="weather-widget-two">
                             <div class="card-body">
@@ -333,6 +336,13 @@
                             </div>
                         </div>
                     </div>
+                
+                
+                
+                </div>
+                </div>
+                </div>
+                </div>
                 </div>
                 </div>
             </div>
