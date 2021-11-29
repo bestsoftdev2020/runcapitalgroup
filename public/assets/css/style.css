@@ -18597,7 +18597,7 @@ body.dark-only {
   body.dark-only .flot-chart-placeholder .legend table {
     color: #fff !important; }
   body.dark-only .compact-wrapper tbody {
-    background-color: #202938; }
+  }
   body.dark-only .dashboard-default-sec .card .card-header p, body.dark-only .dashboard-2-main .card .card-header p {
     color: rgba(255, 255, 255, 0.7); }
   body.dark-only .dashboard-default-sec .card .card-header ul.week-date li, body.dark-only .dashboard-2-main .card .card-header ul.week-date li {

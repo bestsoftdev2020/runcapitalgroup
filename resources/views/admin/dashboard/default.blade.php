@@ -72,7 +72,7 @@
                     <div class="card">
                         <div class="cal-date-widget card-body">
                             <div class="row">
-                                <div class="col-xl-3 col-xs-6 col-md-3 col-sm-3">
+                                <div class="col-xl-5 col-xs-5 col-md-5 col-sm-5">
                                     <div class="card profile-greeting">
                                         <div class="card-header">
                                             <div class="header-top">
@@ -112,7 +112,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-9 col-xs-12 col-md-9 col-sm-9">
+                                <div class="col-xl-7 col-xs-7 col-md-7 col-sm-7">
                                     <div class="card mb-30">
                                         <div class="card-body pb-0">
                                             <h4 class="card-title">Last Month Summary</h4>
@@ -153,6 +153,7 @@
                                                     <div class="chart-wrapper">
                                                         <div id="echart_dashboard" style="height: 300px; width: 100%;">
                                                     </div>
+                                                    <button class="btn btn-light" style="padding: 0.3rem 1.3rem;position: absolute;right: 10px;bottom: 15px;">Next</button>
                                                 </div>
                                             </div>
                                         </div>

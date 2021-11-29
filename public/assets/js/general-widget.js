@@ -58,6 +58,15 @@ var echart_dashboard = {
                     show: false,
                     position: 'center'
                 },
+                lineStyle: {
+                    normal: {
+                        color: "#ff0000",
+                        shadowColor: 'rgba(0, 0, 0, .3)',
+                        shadowBlur: 0,
+                        shadowOffsetY: 5,
+                        shadowOffsetX: 5,
+                    },
+                },
                 emphasis: {
                     label: {
                         show: true,
@@ -69,7 +78,7 @@ var echart_dashboard = {
                     show: false
                 },
                 data: [
-                    { value: 80, name: 'Completed' },
+                    { value: 80, name: 'Completed', itemStyle: {color: '#198754'},},
                     { value: 20, name: 'Pending' }
                 ]
             }
